@@ -1,0 +1,94 @@
+header {
+    height: 100vh;
+    padding: 7rem;
+    overflow: hidden;
+}
+
+.hearder_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+/* =============cta============ */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+/* =================header socila=============== */
+
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
+/* ======================me================ */
+
+.me {
+    background: linear-gradient( var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: 355px;
+    margin-top: 2rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1rem;
+}
+
+.img {
+    border-radius: 12rem 12rem 0 0;
+}
+
+
+/* ==============scorllar down/ */
+
+.scroll_down {
+    position: absolute;
+    bottom: 2rem;
+    right: -2.3rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+
+/* =============medium devices */
+
+@media screen and (max-width:1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+
+/* small devicess============== */
+
+@media screen and (max-width:600px) {
+    header {
+        height: 68vh;
+    }
+    .header_socials,
+    .scroll_down {
+        display: none;
+    }
+}
